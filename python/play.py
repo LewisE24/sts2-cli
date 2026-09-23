@@ -717,9 +717,9 @@ def show_combat(state):
             if itype == "Attack":
                 if dmg is not None:
                     if hits and hits > 1:
-                        intent_parts.append(c(f"⚔{dmg}x{hits}", "red"))
+                        intent_parts.append(c(f"⚔ {dmg}x{hits}", "red"))
                     else:
-                        intent_parts.append(c(f"⚔{dmg}", "red"))
+                        intent_parts.append(c(f"⚔ {dmg}", "red"))
                 else:
                     intent_parts.append(c(t("⚔ATK","⚔攻击"), "red"))
             elif itype == "Defend":
